@@ -334,6 +334,15 @@ a.card:hover {
     line-height: 1.4;
 }
 
+.detail-list li strong a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.detail-list li strong a:hover {
+    text-decoration: underline;
+}
+
 .detail-list li:hover {
     border-color: var(--color-accent);
     background: var(--color-accent-soft);
