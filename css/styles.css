@@ -260,6 +260,15 @@ a.card:hover {
 .day-columns .detail-group[data-time="comida"] h3::before { background: #4caf50; }
 .day-columns .detail-group[data-time="tarde"] h3::before { background: #2f6feb; }
 .day-columns .detail-group[data-time="cena"] h3::before { background: #7c4dff; }
+.day-columns .detail-group[data-time="proximo"] h3::before { background: #00897b; }
+
+.day-columns .detail-group .task-list li {
+    background: var(--color-bg);
+}
+
+.day-columns .detail-group .task-list label {
+    padding: 10px 12px;
+}
 
 .detail-group {
     margin-bottom: 28px;
