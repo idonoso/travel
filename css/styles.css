@@ -348,3 +348,62 @@ a.card:hover {
     background: var(--color-accent-soft);
     transform: translateY(-1px);
 }
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.task-list li {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.task-list li:hover {
+    border-color: var(--color-accent);
+    background: var(--color-accent-soft);
+}
+
+.task-list label {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    align-items: start;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.task-list input[type="checkbox"] {
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--color-accent);
+    cursor: pointer;
+}
+
+.task-list label span {
+    display: grid;
+    gap: 2px;
+}
+
+.task-list label span strong {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+.task-list label span span {
+    font-size: 13px;
+    color: var(--color-muted);
+    line-height: 1.4;
+}
+
+.task-list input[type="checkbox"]:checked ~ span strong {
+    text-decoration: line-through;
+    color: var(--color-muted);
+}
