@@ -72,20 +72,25 @@ function sortTableByColumn(table, th) {
 
 function initTableFilters() {
     document.querySelectorAll("input[data-table-filter]").forEach((input) => {
-        const table = document.getElementById(input.dataset.tableFilter);
-        if (!table) return;
-        const emptyMessage = table.parentElement.querySelector(".empty-filter");
+        const tables = input.dataset.tableFilter
+            .split(",")
+            .map((id) => document.getElementById(id.trim()))
+            .filter(Boolean);
+        if (!tables.length) return;
 
         input.addEventListener("input", () => {
             const term = normalizeSearchText(input.value.trim());
-            let visibleCount = 0;
-            table.querySelectorAll("tbody tr").forEach((row) => {
-                const haystack = normalizeSearchText(`${row.dataset.name || ""} ${row.dataset.region || ""} ${row.dataset.country || ""}`);
-                const visible = haystack.includes(term);
-                row.hidden = !visible;
-                if (visible) visibleCount += 1;
+            tables.forEach((table) => {
+                const emptyMessage = table.parentElement.querySelector(".empty-filter");
+                let visibleCount = 0;
+                table.querySelectorAll("tbody tr").forEach((row) => {
+                    const haystack = normalizeSearchText(`${row.dataset.name || ""} ${row.dataset.region || ""} ${row.dataset.country || ""}`);
+                    const visible = haystack.includes(term);
+                    row.hidden = !visible;
+                    if (visible) visibleCount += 1;
+                });
+                if (emptyMessage) emptyMessage.hidden = visibleCount !== 0;
             });
-            if (emptyMessage) emptyMessage.hidden = visibleCount !== 0;
         });
     });
 }

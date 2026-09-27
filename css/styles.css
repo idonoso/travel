@@ -417,6 +417,17 @@ a.card:hover {
     color: var(--color-muted);
 }
 
+.continent-heading {
+    margin: 40px 0 16px 0;
+    padding-bottom: 12px;
+    font-size: 20px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.continent-heading:first-of-type {
+    margin-top: 0;
+}
+
 .legend {
     background: var(--color-surface);
     border: 1px dashed var(--color-border);
