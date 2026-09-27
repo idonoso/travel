@@ -24,7 +24,7 @@
     <main>
         <div class="page-header">
             <h1>Sitios visitados</h1>
-            <p>Todos los sitios donde ha estado Bubu, Dudu o los dos, organizados por continente, país y región.</p>
+            <p>Todos los sitios donde ha estado Bubu, Dudu o los dos. Haz clic en "Sitio" o "Región" para ordenar.</p>
         </div>
 
         <div class="legend">
@@ -35,1086 +35,886 @@
             <span class="legend-item"><span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span></span>
         </div>
 
-        <details class="continent-block" open>
-            <summary class="continent-title">🌍 Europa</summary>
+        <div class="filter-bar">
+            <input type="search" class="filter-input" placeholder="Buscar por sitio o región…" data-table-filter="visited-table" aria-label="Buscar por sitio o región">
+        </div>
 
-            <details class="country-block" open>
-                <summary class="country-title">
-                    <span class="title-text">España</span>
-                    <span class="aggregate-stats">
-                        <span class="aggregate-person" data-person="dudu">🐻</span>
-                        <span class="aggregate-person" data-person="bubu">🐼</span>
-                    </span>
-                </summary>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Alicante</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Calpe</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2023 · Para visitar · 4/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Almería</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Mójacar</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2024 · Para visitar · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Níjar</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2024 · Para visitar · 4/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Asturias</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="atraccion" title="Atracción">🎡</span>Descenso del Sella</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2026 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Llanes</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2026 · De paso · 4/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Oviedo</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2026 · Para visitar · 6/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Ribadesella</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2026 · De paso · 4/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Villaviciosa</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2026 · De paso · 4/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Ávila</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Arenas de San Pedro</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2026 · Para visitar · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="atraccion" title="Atracción">🎡</span>Cuevas del Águila</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2026 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Parque Natural de Gredos</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
-                                    <span class="persona-meta">2026 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Barcelona</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Barcelona</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
-                                    <span class="persona-meta">Hace mucho · Para visitar · 6/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Rupit</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Vic</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · De paso · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Cádiz</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Conil de la Frontera</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · Para visitar</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Setenil de las Bodegas</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2021 · Para visitar · 6/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Cantabria</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Cabárceno</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2026 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Comillas</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
-                                    <span class="persona-meta">2026 · Para visitar · 8/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Santander</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2026 · Para visitar · 6/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Santillana del Mar</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2026 · Para visitar · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Santoña</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2026 · Para visitar · 3/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Castellón</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Peñíscola</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2018 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Córdoba</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Córdoba</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2023 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Girona</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Besalú</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · De paso · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Cadaqués</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Castellfollit de la Roca</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · De paso · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Figueres</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Olot</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · De paso · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Parque Natural de la Zona Volcánica de la Garrotxa</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Tossa de Mar</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · Para visitar · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Granada</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Granada</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2024 · Para visitar · 8/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Parque Nacional de Sierra Nevada</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
-                                    <span class="persona-meta">2023 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Huelva</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>El Rocío</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2021 · Para visitar · 8/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Parque Nacional de Doñana</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
-                                    <span class="persona-meta">2021 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Huesca</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Aínsa</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2018 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Parque Nacional de Ordesa</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
-                                    <span class="persona-meta">2018 · Para visitar · 8/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">La Coruña</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Betanzos</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · De paso · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Ferrol</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · De paso · 4/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Pontedeume</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · De paso · 4/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Santiago de Compostela</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
-                                    <span class="persona-meta">2022 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">León</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>León</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
-                                    <span class="persona-meta">2025 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Sahagún</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · Para visitar · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Lleida</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Arties</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2024 · De paso · 4/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Bagergue</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2024 · Para visitar · 4/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Balaguer</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · De paso · 4/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Lleida</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · Para visitar · 6/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Sierra del Montsec</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
-                                    <span class="persona-meta">2022 · Para visitar · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Vielha</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2025 · Para visitar · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Málaga</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Antequera</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · De paso · 6/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="atraccion" title="Atracción">🎡</span>Caminito del Rey</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2021 · Para visitar · 8/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Málaga</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2018 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Marbella</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2018 · Para visitar · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Ronda</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2021 · Para visitar · 8/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Murcia</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Águilas</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2025 · Para visitar · 6/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Cabo de Palos</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2025 · Para visitar · 4/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Cartagena</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2025 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Lorca</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
-                                    <span class="persona-meta">2025 · Para visitar · 6/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Murcia</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2024 · Para visitar · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">País Vasco</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Bilbao</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2023 · Para visitar · 6/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Gernika</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Getaria</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · Para visitar · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Hondarribia</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · Para visitar · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Irún</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2023 · De paso · 4/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Lekeitio</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · Para visitar · 4/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Mundaka</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2022 · Para visitar · 5/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Portugalete</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2025 · De paso · 4/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>San Sebastián</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
-                                    <span class="persona-meta">2024 · Para visitar · 9/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Zarautz</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2023 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Zumaia</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2023 · Para visitar · 6/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Sevilla</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Sevilla</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2023 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Tarragona</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Delta del Ebro</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
-                                    <span class="persona-meta">2018 · Para visitar · 7/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Toledo</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Talavera de la Reina</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="visto-todo">Visto todo</span>
-                                    <span class="persona-meta">2017 · Para visitar · 6/10</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-
-                <details class="region-group" open>
-                    <summary class="region-title">
-                        <span class="title-text">Valencia</span>
-                        <span class="aggregate-stats">
-                            <span class="aggregate-person" data-person="dudu">🐻</span>
-                            <span class="aggregate-person" data-person="bubu">🐼</span>
-                        </span>
-                    </summary>
-                    <table class="site-table">
-                        <thead>
-                            <tr>
-                                <th>Sitio</th>
-                                <th>🐻 Dudu</th>
-                                <th>🐼 Bubu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Valencia</td>
-                                <td class="persona-cell">
-                                    <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
-                                    <span class="persona-meta">2022 · De paso</span>
-                                </td>
-                                <td class="persona-cell">—</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-            </details>
-        </details>
+        <div class="table-panel">
+            <table class="site-table" id="visited-table" data-sortable>
+                <thead>
+                    <tr>
+                        <th data-sort-key="name">Sitio</th>
+                        <th data-sort-key="region">Región</th>
+                        <th data-sort-key="country">País</th>
+                        <th>🐻 Dudu</th>
+                        <th>🐼 Bubu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-name="Calpe" data-region="Alicante" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Calpe</td>
+                        <td class="persona-cell">Alicante</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2023 · Para visitar · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Mójacar" data-region="Almería" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Mójacar</td>
+                        <td class="persona-cell">Almería</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2024 · Para visitar · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Níjar" data-region="Almería" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Níjar</td>
+                        <td class="persona-cell">Almería</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2024 · Para visitar · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Amsterdam" data-region="Amsterdam" data-country="Países Bajos">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Amsterdam</td>
+                        <td class="persona-cell">Amsterdam</td>
+                        <td class="persona-cell">Países Bajos</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2018 · Para visitar · 6/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Descenso del Sella" data-region="Asturias" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="atraccion" title="Atracción">🎡</span>Descenso del Sella</td>
+                        <td class="persona-cell">Asturias</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2026 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Llanes" data-region="Asturias" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Llanes</td>
+                        <td class="persona-cell">Asturias</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2026 · De paso · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Oviedo" data-region="Asturias" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Oviedo</td>
+                        <td class="persona-cell">Asturias</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2026 · Para visitar · 6/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Ribadesella" data-region="Asturias" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Ribadesella</td>
+                        <td class="persona-cell">Asturias</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2026 · De paso · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Villaviciosa" data-region="Asturias" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Villaviciosa</td>
+                        <td class="persona-cell">Asturias</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2026 · De paso · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Arenas de San Pedro" data-region="Ávila" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Arenas de San Pedro</td>
+                        <td class="persona-cell">Ávila</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2026 · Para visitar · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Cuevas del Águila" data-region="Ávila" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="atraccion" title="Atracción">🎡</span>Cuevas del Águila</td>
+                        <td class="persona-cell">Ávila</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2026 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Parque Natural de Gredos" data-region="Ávila" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Parque Natural de Gredos</td>
+                        <td class="persona-cell">Ávila</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2026 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Barcelona" data-region="Barcelona" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Barcelona</td>
+                        <td class="persona-cell">Barcelona</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">Hace mucho · Para visitar · 6/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Rupit" data-region="Barcelona" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Rupit</td>
+                        <td class="persona-cell">Barcelona</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Vic" data-region="Barcelona" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Vic</td>
+                        <td class="persona-cell">Barcelona</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · De paso · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Conil de la Frontera" data-region="Cádiz" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Conil de la Frontera</td>
+                        <td class="persona-cell">Cádiz</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · Para visitar</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Setenil de las Bodegas" data-region="Cádiz" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Setenil de las Bodegas</td>
+                        <td class="persona-cell">Cádiz</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2021 · Para visitar · 6/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Cabárceno" data-region="Cantabria" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Cabárceno</td>
+                        <td class="persona-cell">Cantabria</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2026 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Comillas" data-region="Cantabria" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Comillas</td>
+                        <td class="persona-cell">Cantabria</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2026 · Para visitar · 8/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Santander" data-region="Cantabria" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Santander</td>
+                        <td class="persona-cell">Cantabria</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2026 · Para visitar · 6/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Santillana del Mar" data-region="Cantabria" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Santillana del Mar</td>
+                        <td class="persona-cell">Cantabria</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2026 · Para visitar · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Santoña" data-region="Cantabria" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Santoña</td>
+                        <td class="persona-cell">Cantabria</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2026 · Para visitar · 3/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Peñíscola" data-region="Castellón" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Peñíscola</td>
+                        <td class="persona-cell">Castellón</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2018 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Córdoba" data-region="Córdoba" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Córdoba</td>
+                        <td class="persona-cell">Córdoba</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2023 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Crucero por el Nilo" data-region="Egipto" data-country="Egipto">
+                        <td class="site-name-cell"><span class="site-type" data-type="atraccion" title="Atracción">🎡</span>Crucero por el Nilo</td>
+                        <td class="persona-cell">Egipto</td>
+                        <td class="persona-cell">Egipto</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2023 · Para visitar · 9/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="El Cairo" data-region="Egipto" data-country="Egipto">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>El Cairo</td>
+                        <td class="persona-cell">Egipto</td>
+                        <td class="persona-cell">Egipto</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2023 · Para visitar · 9/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Hurghada" data-region="Egipto" data-country="Egipto">
+                        <td class="site-name-cell"><span class="site-type" data-type="playa" title="Playa">🏖️</span>Hurghada</td>
+                        <td class="persona-cell">Egipto</td>
+                        <td class="persona-cell">Egipto</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2023 · Para visitar · 9/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Luxor" data-region="Egipto" data-country="Egipto">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Luxor</td>
+                        <td class="persona-cell">Egipto</td>
+                        <td class="persona-cell">Egipto</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2023 · Para visitar · 9/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Besalú" data-region="Girona" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Besalú</td>
+                        <td class="persona-cell">Girona</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · De paso · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Cadaqués" data-region="Girona" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Cadaqués</td>
+                        <td class="persona-cell">Girona</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Castellfollit de la Roca" data-region="Girona" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Castellfollit de la Roca</td>
+                        <td class="persona-cell">Girona</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · De paso · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Figueres" data-region="Girona" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Figueres</td>
+                        <td class="persona-cell">Girona</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Olot" data-region="Girona" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Olot</td>
+                        <td class="persona-cell">Girona</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · De paso · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Parque Natural de la Zona Volcánica de la Garrotxa" data-region="Girona" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Parque Natural de la Zona Volcánica de la Garrotxa</td>
+                        <td class="persona-cell">Girona</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Tossa de Mar" data-region="Girona" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Tossa de Mar</td>
+                        <td class="persona-cell">Girona</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · Para visitar · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Granada" data-region="Granada" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Granada</td>
+                        <td class="persona-cell">Granada</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2024 · Para visitar · 8/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Parque Nacional de Sierra Nevada" data-region="Granada" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Parque Nacional de Sierra Nevada</td>
+                        <td class="persona-cell">Granada</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2023 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="El Rocío" data-region="Huelva" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>El Rocío</td>
+                        <td class="persona-cell">Huelva</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2021 · Para visitar · 8/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Parque Nacional de Doñana" data-region="Huelva" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Parque Nacional de Doñana</td>
+                        <td class="persona-cell">Huelva</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2021 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Aínsa" data-region="Huesca" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Aínsa</td>
+                        <td class="persona-cell">Huesca</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2018 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Parque Nacional de Ordesa" data-region="Huesca" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Parque Nacional de Ordesa</td>
+                        <td class="persona-cell">Huesca</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2018 · Para visitar · 8/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Betanzos" data-region="La Coruña" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Betanzos</td>
+                        <td class="persona-cell">La Coruña</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · De paso · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Ferrol" data-region="La Coruña" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Ferrol</td>
+                        <td class="persona-cell">La Coruña</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · De paso · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Pontedeume" data-region="La Coruña" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Pontedeume</td>
+                        <td class="persona-cell">La Coruña</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · De paso · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Santiago de Compostela" data-region="La Coruña" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Santiago de Compostela</td>
+                        <td class="persona-cell">La Coruña</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2022 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="La Haya" data-region="La Haya" data-country="Países Bajos">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>La Haya</td>
+                        <td class="persona-cell">La Haya</td>
+                        <td class="persona-cell">Países Bajos</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">Hace mucho · Para visitar · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="León" data-region="León" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>León</td>
+                        <td class="persona-cell">León</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2025 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Sahagún" data-region="León" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Sahagún</td>
+                        <td class="persona-cell">León</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · Para visitar · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Arties" data-region="Lleida" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Arties</td>
+                        <td class="persona-cell">Lleida</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2024 · De paso · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Bagergue" data-region="Lleida" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Bagergue</td>
+                        <td class="persona-cell">Lleida</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2024 · Para visitar · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Balaguer" data-region="Lleida" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Balaguer</td>
+                        <td class="persona-cell">Lleida</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · De paso · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Lleida" data-region="Lleida" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Lleida</td>
+                        <td class="persona-cell">Lleida</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · Para visitar · 6/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Sierra del Montsec" data-region="Lleida" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Sierra del Montsec</td>
+                        <td class="persona-cell">Lleida</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2022 · Para visitar · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Vielha" data-region="Lleida" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Vielha</td>
+                        <td class="persona-cell">Lleida</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2025 · Para visitar · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Antequera" data-region="Málaga" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Antequera</td>
+                        <td class="persona-cell">Málaga</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · De paso · 6/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Caminito del Rey" data-region="Málaga" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="atraccion" title="Atracción">🎡</span>Caminito del Rey</td>
+                        <td class="persona-cell">Málaga</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2021 · Para visitar · 8/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Málaga" data-region="Málaga" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Málaga</td>
+                        <td class="persona-cell">Málaga</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2018 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Marbella" data-region="Málaga" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Marbella</td>
+                        <td class="persona-cell">Málaga</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2018 · Para visitar · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Ronda" data-region="Málaga" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Ronda</td>
+                        <td class="persona-cell">Málaga</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2021 · Para visitar · 8/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Águilas" data-region="Murcia" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Águilas</td>
+                        <td class="persona-cell">Murcia</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2025 · Para visitar · 6/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Cabo de Palos" data-region="Murcia" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Cabo de Palos</td>
+                        <td class="persona-cell">Murcia</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2025 · Para visitar · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Cartagena" data-region="Murcia" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Cartagena</td>
+                        <td class="persona-cell">Murcia</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2025 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Lorca" data-region="Murcia" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Lorca</td>
+                        <td class="persona-cell">Murcia</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2025 · Para visitar · 6/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Murcia" data-region="Murcia" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Murcia</td>
+                        <td class="persona-cell">Murcia</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2024 · Para visitar · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Bilbao" data-region="País Vasco" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Bilbao</td>
+                        <td class="persona-cell">País Vasco</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2023 · Para visitar · 6/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Gernika" data-region="País Vasco" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Gernika</td>
+                        <td class="persona-cell">País Vasco</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Getaria" data-region="País Vasco" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Getaria</td>
+                        <td class="persona-cell">País Vasco</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · Para visitar · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Hondarribia" data-region="País Vasco" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Hondarribia</td>
+                        <td class="persona-cell">País Vasco</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · Para visitar · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Irún" data-region="País Vasco" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Irún</td>
+                        <td class="persona-cell">País Vasco</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2023 · De paso · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Lekeitio" data-region="País Vasco" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Lekeitio</td>
+                        <td class="persona-cell">País Vasco</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · Para visitar · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Mundaka" data-region="País Vasco" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Mundaka</td>
+                        <td class="persona-cell">País Vasco</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2022 · Para visitar · 5/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Portugalete" data-region="País Vasco" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Portugalete</td>
+                        <td class="persona-cell">País Vasco</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2025 · De paso · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="San Sebastián" data-region="País Vasco" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>San Sebastián</td>
+                        <td class="persona-cell">País Vasco</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2024 · Para visitar · 9/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Zarautz" data-region="País Vasco" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Zarautz</td>
+                        <td class="persona-cell">País Vasco</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2023 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Zumaia" data-region="País Vasco" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="pueblo" title="Pueblo">🏘️</span>Zumaia</td>
+                        <td class="persona-cell">País Vasco</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2023 · Para visitar · 6/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Rotterdam" data-region="Rotterdam" data-country="Países Bajos">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Rotterdam</td>
+                        <td class="persona-cell">Rotterdam</td>
+                        <td class="persona-cell">Países Bajos</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">Hace mucho · Para visitar · 4/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Sevilla" data-region="Sevilla" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Sevilla</td>
+                        <td class="persona-cell">Sevilla</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2023 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Delta del Ebro" data-region="Tarragona" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Delta del Ebro</td>
+                        <td class="persona-cell">Tarragona</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2018 · Para visitar · 7/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Tenerife (parque natural)" data-region="Tenerife" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Tenerife (parque natural)</td>
+                        <td class="persona-cell">Tenerife</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2024 · Para visitar · 8/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Tenerife (playa)" data-region="Tenerife" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="playa" title="Playa">🏖️</span>Tenerife (playa)</td>
+                        <td class="persona-cell">Tenerife</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2024 · Para visitar · 8/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Talavera de la Reina" data-region="Toledo" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Talavera de la Reina</td>
+                        <td class="persona-cell">Toledo</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="visto-todo">Visto todo</span>
+                            <span class="persona-meta">2017 · Para visitar · 6/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Valencia" data-region="Valencia" data-country="España">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Valencia</td>
+                        <td class="persona-cell">Valencia</td>
+                        <td class="persona-cell">España</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2022 · De paso</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Caracas" data-region="Venezuela" data-country="Venezuela">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Caracas</td>
+                        <td class="persona-cell">Venezuela</td>
+                        <td class="persona-cell">Venezuela</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2024 · Para visitar · 8/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Los Roques" data-region="Venezuela" data-country="Venezuela">
+                        <td class="site-name-cell"><span class="site-type" data-type="parque-natural" title="Parque natural">🌳</span>Los Roques</td>
+                        <td class="persona-cell">Venezuela</td>
+                        <td class="persona-cell">Venezuela</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2024 · Para visitar · 8/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Maracay" data-region="Venezuela" data-country="Venezuela">
+                        <td class="site-name-cell"><span class="site-type" data-type="ciudad" title="Ciudad">🏙️</span>Maracay</td>
+                        <td class="persona-cell">Venezuela</td>
+                        <td class="persona-cell">Venezuela</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2024 · Para visitar · 8/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                    <tr data-name="Tucacas" data-region="Venezuela" data-country="Venezuela">
+                        <td class="site-name-cell"><span class="site-type" data-type="playa" title="Playa">🏖️</span>Tucacas</td>
+                        <td class="persona-cell">Venezuela</td>
+                        <td class="persona-cell">Venezuela</td>
+                        <td class="persona-cell">
+                            <span class="persona-badge" data-status="falta-por-ver">Le falta por ver</span>
+                            <span class="persona-meta">2024 · Para visitar · 8/10</span>
+                        </td>
+                        <td class="persona-cell">—</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="empty-filter" hidden>No se encontraron sitios.</p>
+        </div>
     </main>
 
     <script src="js/app.js"></script>

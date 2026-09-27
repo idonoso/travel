@@ -27,80 +27,65 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    renderVisitedAggregates();
+    initSortableTables();
+    initTableFilters();
 });
 
-function renderVisitedAggregates() {
-    const countryBlocks = document.querySelectorAll(".country-block");
-    if (!countryBlocks.length) return;
+function normalizeSearchText(str) {
+    return str
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[̀-ͯ]/g, "");
+}
 
-    const STATUS_LABELS = {
-        "quiere-volver": "Quiere volver",
-        "visto-todo": "Visto todo",
-        "falta-por-ver": "Le falta por ver",
-    };
-
-    const parsePersonaCell = (cell) => {
-        const badge = cell.querySelector(".persona-badge");
-        if (!badge) return null;
-        const metaText = cell.querySelector(".persona-meta")?.textContent || "";
-        let year = null;
-        let score = null;
-        metaText.split("·").map((part) => part.trim()).forEach((part) => {
-            if (/^\d{4}$/.test(part)) year = parseInt(part, 10);
-            else if (/^\d+(\.\d+)?\/10$/.test(part)) score = parseFloat(part);
+function initSortableTables() {
+    document.querySelectorAll("table[data-sortable]").forEach((table) => {
+        table.querySelectorAll("thead th[data-sort-key]").forEach((th) => {
+            th.classList.add("sortable");
+            th.addEventListener("click", () => sortTableByColumn(table, th));
         });
-        return { status: badge.dataset.status, year, score };
-    };
-
-    const combineStatus = (entries) => {
-        if (entries.some((e) => e.status === "falta-por-ver")) return "falta-por-ver";
-        if (entries.some((e) => e.status === "quiere-volver")) return "quiere-volver";
-        if (entries.some((e) => e.status === "visto-todo")) return "visto-todo";
-        return null;
-    };
-
-    const formatScore = (score) => (Number.isInteger(score) ? `${score}/10` : `${score.toFixed(1)}/10`);
-
-    const buildAggregate = (entries) => {
-        if (!entries.length) return "—";
-        const status = combineStatus(entries);
-        const years = entries.map((e) => e.year).filter((y) => y !== null);
-        const scores = entries.map((e) => e.score).filter((s) => s !== null);
-        const metaParts = [years.length ? String(Math.max(...years)) : "Hace mucho"];
-        if (scores.length) {
-            const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
-            metaParts.push(formatScore(avg));
-        }
-        return `<span class="persona-badge" data-status="${status}">${STATUS_LABELS[status]}</span><span class="persona-meta">${metaParts.join(" · ")}</span>`;
-    };
-
-    const collectEntries = (rows, personIndex) => {
-        const entries = [];
-        rows.forEach((row) => {
-            const cell = row.children[personIndex];
-            if (!cell) return;
-            const entry = parsePersonaCell(cell);
-            if (entry) entries.push(entry);
-        });
-        return entries;
-    };
-
-    const fillAggregateStats = (container, rows) => {
-        if (!container) return;
-        const duduSlot = container.querySelector('[data-person="dudu"]');
-        const bubuSlot = container.querySelector('[data-person="bubu"]');
-        if (duduSlot) duduSlot.innerHTML = `🐻 ${buildAggregate(collectEntries(rows, 1))}`;
-        if (bubuSlot) bubuSlot.innerHTML = `🐼 ${buildAggregate(collectEntries(rows, 2))}`;
-    };
-
-    document.querySelectorAll(".region-group").forEach((region) => {
-        const rows = Array.from(region.querySelectorAll("table.site-table tbody tr"));
-        fillAggregateStats(region.querySelector(".region-title .aggregate-stats"), rows);
     });
+}
 
-    countryBlocks.forEach((country) => {
-        const rows = Array.from(country.querySelectorAll("table.site-table tbody tr"));
-        fillAggregateStats(country.querySelector(".country-title .aggregate-stats"), rows);
+function sortTableByColumn(table, th) {
+    const key = th.dataset.sortKey;
+    const tbody = table.querySelector("tbody");
+    if (!tbody) return;
+
+    const ascending = th.dataset.sortDir !== "asc";
+    table.querySelectorAll("thead th").forEach((h) => {
+        delete h.dataset.sortDir;
+        h.classList.remove("sort-asc", "sort-desc");
+    });
+    th.dataset.sortDir = ascending ? "asc" : "desc";
+    th.classList.add(ascending ? "sort-asc" : "sort-desc");
+
+    const collator = new Intl.Collator("es", { sensitivity: "base" });
+    const rows = Array.from(tbody.querySelectorAll("tr"));
+    rows.sort((a, b) => {
+        const aVal = a.dataset[key] || "";
+        const bVal = b.dataset[key] || "";
+        return ascending ? collator.compare(aVal, bVal) : collator.compare(bVal, aVal);
+    });
+    rows.forEach((row) => tbody.appendChild(row));
+}
+
+function initTableFilters() {
+    document.querySelectorAll("input[data-table-filter]").forEach((input) => {
+        const table = document.getElementById(input.dataset.tableFilter);
+        if (!table) return;
+        const emptyMessage = table.parentElement.querySelector(".empty-filter");
+
+        input.addEventListener("input", () => {
+            const term = normalizeSearchText(input.value.trim());
+            let visibleCount = 0;
+            table.querySelectorAll("tbody tr").forEach((row) => {
+                const haystack = normalizeSearchText(`${row.dataset.name || ""} ${row.dataset.region || ""} ${row.dataset.country || ""}`);
+                const visible = haystack.includes(term);
+                row.hidden = !visible;
+                if (visible) visibleCount += 1;
+            });
+            if (emptyMessage) emptyMessage.hidden = visibleCount !== 0;
+        });
     });
 }
