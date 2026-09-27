@@ -31,9 +31,6 @@ Para cada sitio necesitas:
 
    No asumas el estado a partir de comentarios genéricos; confírmalo con el usuario para cada persona que haya estado en el sitio. Si el usuario ya lo dijo explícitamente en su mensaje (p.ej. "me gustaría volver a Ordesa"), no vuelvas a preguntarlo.
 
-7. **Para cada persona**, además del estado, pregunta también:
-   - **Año de la última visita** — opcional. Si el usuario no lo indica (o dice que no se acuerda), usa el texto `Hace mucho` en vez de un año.
-
 Haz preguntas cortas y agrupadas, solo por los datos que falten.
 
 ## Paso 2: Leer el estado actual de la página
@@ -57,7 +54,6 @@ Cada sitio es una única `<tr>` dentro del `<tbody>` de la tabla, con este forma
     <td class="persona-cell">España</td>
     <td class="persona-cell">
         <span class="persona-badge" data-status="quiere-volver">Quiere volver</span>
-        <span class="persona-meta">2021</span>
     </td>
     <td class="persona-cell">—</td>
 </tr>
@@ -75,7 +71,7 @@ Reglas de la plantilla:
   - `atraccion` → 🎡
 - La celda de región es `<td class="persona-cell">Texto de la región</td>` (texto plano, sin markup adicional).
 - La celda de país es `<td class="persona-cell">Texto del país</td>` (texto plano, sin markup adicional). Por defecto "España".
-- En la columna de cada persona: si esa persona **ha estado** en el sitio, pon el `<span class="persona-badge" data-status="...">` con el texto exacto "Quiere volver", "Visto todo" o "Le falta por ver", seguido de `<span class="persona-meta">` con el año (o "Hace mucho"). Si esa persona **no ha estado**, la celda es solo un guion: `<td class="persona-cell">—</td>`.
+- En la columna de cada persona: si esa persona **ha estado** en el sitio, pon únicamente el `<span class="persona-badge" data-status="...">` con el texto exacto "Quiere volver", "Visto todo" o "Le falta por ver" (sin año ni ningún otro dato). Si esa persona **no ha estado**, la celda es solo un guion: `<td class="persona-cell">—</td>`.
 - `data-status` solo admite `quiere-volver`, `visto-todo` o `falta-por-ver`.
 
 ## Paso 5: Insertar en el lugar correcto
@@ -86,11 +82,11 @@ El orden visual de la tabla no importa para el funcionamiento (se puede reordena
 
 Si el sitio (misma región + mismo nombre exacto de sitio) ya existe:
 
-- Si la celda de la persona que estás registrando está vacía (`—`), sustitúyela por su `<span class="persona-badge">` + `<span class="persona-meta">`.
-- Si la celda **ya tiene un badge** y su estado o año ha cambiado (p.ej. una nueva visita más reciente, o pasó de "Le falta por ver" a "Visto todo"), actualiza `data-status`, el texto del badge y el contenido de `.persona-meta` en consecuencia.
+- Si la celda de la persona que estás registrando está vacía (`—`), sustitúyela por su `<span class="persona-badge">`.
+- Si la celda **ya tiene un badge** y su estado ha cambiado (p.ej. pasó de "Le falta por ver" a "Visto todo"), actualiza `data-status` y el texto del badge en consecuencia.
 - Nunca crees una `<tr>` duplicada para el mismo sitio.
 - Si el sitio existente todavía no tiene `<span class="site-type">` (páginas antiguas) o le falta el `data-name`/`data-region`/`data-country` en la `<tr>` o la celda de País, añádeselos siguiendo las reglas del Paso 4.
 
 ## Paso 7: Resumen final
 
-Al terminar, confirma en una frase qué se ha añadido o actualizado (sitio, región, y el estado y año de cada persona).
+Al terminar, confirma en una frase qué se ha añadido o actualizado (sitio, región, y el estado de cada persona).
