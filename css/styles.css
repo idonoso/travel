@@ -153,6 +153,12 @@ a.card:hover {
     font-size: 14px;
 }
 
+.card p.card-total {
+    margin-top: 8px;
+    color: var(--color-text);
+    font-weight: 600;
+}
+
 .empty-state {
     background: var(--color-surface);
     border: 1px dashed var(--color-border);
@@ -417,6 +423,33 @@ a.card:hover {
     color: var(--color-muted);
 }
 
+.task-list li.has-children {
+    padding-bottom: 12px;
+}
+
+.task-sublist {
+    list-style: none;
+    margin: 0 16px 0 44px;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.task-sublist li {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.task-sublist li:hover {
+    border-color: var(--color-accent);
+    background: var(--color-accent-soft);
+}
+
+.task-sublist label {
+    padding: 8px 12px;
+}
+
 .continent-heading {
     margin: 40px 0 16px 0;
     padding-bottom: 12px;
@@ -594,4 +627,27 @@ a.card:hover {
 .persona-badge[data-status="falta-por-ver"] {
     background: #fff4e0;
     color: #b26a00;
+}
+
+.trip-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.trip-badge[data-status="hecho"] {
+    background: #e6f4ea;
+    color: #1e7d34;
+}
+
+.site-table tfoot td {
+    font-weight: 600;
+    border-top: 1px solid var(--color-border);
 }

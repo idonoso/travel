@@ -29,7 +29,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initSortableTables();
     initTableFilters();
+    initTaskPersistence();
 });
+
+function initTaskPersistence() {
+    const page = document.body.dataset.page || "page";
+    document.querySelectorAll(".task-list input[type='checkbox'][data-task-id]").forEach((checkbox) => {
+        const key = `travel:${page}:${checkbox.dataset.taskId}`;
+        try {
+            const saved = localStorage.getItem(key);
+            if (saved !== null) checkbox.checked = saved === "1";
+        } catch (e) {
+            /* localStorage no disponible (modo privado, etc.) */
+        }
+        checkbox.addEventListener("change", () => {
+            try {
+                localStorage.setItem(key, checkbox.checked ? "1" : "0");
+            } catch (e) {
+                /* localStorage no disponible (modo privado, etc.) */
+            }
+        });
+    });
+}
 
 function normalizeSearchText(str) {
     return str

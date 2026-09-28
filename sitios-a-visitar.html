@@ -24,13 +24,251 @@
     <main>
         <div class="page-header">
             <h1>Sitios a visitar</h1>
-            <p>Lugares pendientes que quieren conocer Bubu y Dudu.</p>
+            <p>Cosas pendientes de Bubu y Dudu. Marca lo que ya hayáis hecho.</p>
         </div>
 
-        <section class="grid">
+        <div class="tabs" role="tablist">
+            <button class="tab active" data-tab="dudu" role="tab">🐻 Dudu</button>
+            <button class="tab" data-tab="bubu" role="tab">🐼 Bubu</button>
+        </div>
+
+        <section class="tab-panel active" data-tab="dudu" role="tabpanel">
+            <ul class="task-list">
+                <li class="has-children">
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-bucear">
+                        <span><strong>Bucear</strong></span>
+                    </label>
+                    <ul class="task-sublist">
+                        <li>
+                            <label>
+                                <input type="checkbox" checked data-task-id="dudu-bucear-aprender">
+                                <span><strong>Aprender</strong></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-bucear-tiburones">
+                                <span><strong>Con tiburones</strong><span>Lo último de la lista por si me comen.</span></span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-usa">
+                        <span><strong>USA</strong></span>
+                    </label>
+                    <ul class="task-sublist">
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-usa-vegas">
+                                <span><strong>Las Vegas, entrar en un casino</strong><span>Apostar todo al rojo.</span></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-usa-motel">
+                                <span><strong>Dormir en un motel de carretera</strong></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-usa-pueblo">
+                                <span><strong>Pasar por el típico pueblo y tomar algo en una cafetería</strong></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-usa-ruta66">
+                                <span><strong>Ruta 66</strong><span>No hace falta hacerla entera, solo conducir por la carretera y parar en un motel y en una cafetería de carretera.</span></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-usa-central-park">
+                                <span><strong>Pasear por Central Park</strong></span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-bangkok">
+                        <span><strong>Tailandia, Bangkok</strong><span>Puede ser otro país parecido o cercano, como Vietnam.</span></span>
+                    </label>
+                </li>
+                <li class="has-children">
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-egipto">
+                        <span><strong>Egipto</strong></span>
+                    </label>
+                    <ul class="task-sublist">
+                        <li>
+                            <label>
+                                <input type="checkbox" checked data-task-id="dudu-egipto-piramides">
+                                <span><strong>Ver las pirámides</strong></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-egipto-museo">
+                                <span><strong>Ver el nuevo museo</strong></span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-aves">
+                        <span><strong>Aves</strong></span>
+                    </label>
+                    <ul class="task-sublist">
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-aves-pinguino">
+                                <span><strong>Pingüino</strong><span>Uno grande.</span></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-aves-frailecillo">
+                                <span><strong>Frailecillo</strong></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-aves-colibri">
+                                <span><strong>Colibrí</strong></span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-desierto">
+                        <span><strong>Dunas desierto o cruzar el desierto</strong></span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-via-lactea">
+                        <span><strong>Ver, fotografiar vía láctea</strong></span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" checked data-task-id="dudu-f1">
+                        <span><strong>Ver un Gran Premio de F1</strong></span>
+                    </label>
+                </li>
+                <li class="has-children">
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-esquiar">
+                        <span><strong>Esquiar</strong></span>
+                    </label>
+                    <ul class="task-sublist">
+                        <li>
+                            <label>
+                                <input type="checkbox" checked data-task-id="dudu-esquiar-alpes">
+                                <span><strong>Alpes</strong></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-esquiar-cortina">
+                                <span><strong>Ir a Cortina</strong></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-esquiar-travesia">
+                                <span><strong>Fuera pista o travesía</strong><span>Puede ser algo muy simple, por un paisaje totalmente nevado y virgen.</span></span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-camino-santiago">
+                        <span><strong>Camino de Santiago</strong></span>
+                    </label>
+                    <ul class="task-sublist">
+                        <li>
+                            <label>
+                                <input type="checkbox" checked data-task-id="dudu-camino-hacer">
+                                <span><strong>Hacer el camino</strong></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-camino-norte">
+                                <span><strong>Camino del norte</strong></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-camino-madrid">
+                                <span><strong>Camino de Madrid</strong><span>En bici.</span></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" data-task-id="dudu-camino-kayak">
+                                <span><strong>Camino en kayak</strong></span>
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-crucero">
+                        <span><strong>Crucero</strong><span>Una travesía un poco larga, más de un día navegando.</span></span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-pilotar">
+                        <span><strong>Pilotar avión o avioneta</strong></span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-louvre">
+                        <span><strong>Visitar el Louvre</strong></span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-museo-britanico">
+                        <span><strong>Museo británico</strong></span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-safari">
+                        <span><strong>Safari África</strong><span>Ver leones.</span></span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-amazonas">
+                        <span><strong>Navegar por el Amazonas</strong></span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" data-task-id="dudu-vivir-bubu">
+                        <span><strong>Vivir con Bubu</strong><span>Aunque sea en una tienda de campaña.</span></span>
+                    </label>
+                </li>
+            </ul>
+        </section>
+
+        <section class="tab-panel" data-tab="bubu" role="tabpanel">
             <div class="empty-state">
-                <strong>Todavía no hay sitios pendientes registrados</strong>
-                Cuéntame qué sitios quieres añadir y los incluyo aquí.
+                <strong>Todavía no hay lista de Bubu</strong>
+                Pásame su lista de sitios a visitar y la añado aquí.
             </div>
         </section>
     </main>
